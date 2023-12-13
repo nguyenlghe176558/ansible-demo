@@ -1,0 +1,9 @@
+---
+- name: Do something
+  hosts: ec2
+  gather_facts: true
+  become: true
+
+  tasks:
+    - name: Do something
+      script: ./script.sh 
